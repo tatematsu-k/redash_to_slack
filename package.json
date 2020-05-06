@@ -5,6 +5,9 @@
   "repository": "https://github.com/tatematsu-k/redash_to_slack.git",
   "author": "tatematsu-k <ynu1264@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "serverless": "serverless"
+  },
   "dependencies": {
     "serverless": "^1.69.0"
   }
