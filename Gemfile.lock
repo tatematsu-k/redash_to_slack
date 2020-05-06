@@ -1,12 +1,16 @@
 GEM
   remote: https://rubygems.org/
   specs:
+    faraday (1.0.1)
+      multipart-post (>= 1.2, < 3)
+    multipart-post (2.1.1)
     slack-notifier (2.3.2)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
+  faraday
   slack-notifier
 
 BUNDLED WITH
