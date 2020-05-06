@@ -1,5 +1,6 @@
 require 'json'
 require 'slack-notifier'
+require 'faraday'
 
 slack_webhook = ENV["SLACK_WEBHOOK_URL"]
 redash_api_key = ENV["REDASH_API_KEY"]
