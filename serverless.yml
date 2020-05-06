@@ -59,11 +59,11 @@ provider:
 
 functions:
   hello:
-    handler: handler.hello
+    handler: handler.webhook
     events:
       - http:
-          path: users/create
-          method: get
+          path: /webhook
+          method: post
 #      - websocket: $connect
 #      - s3: ${env:BUCKET}
 #      - schedule: rate(10 minutes)

@@ -1,6 +1,6 @@
 require 'json'
 
-def hello(event:, context:)
+def webhook(event:, context:)
   {
     statusCode: 200,
     body: {
