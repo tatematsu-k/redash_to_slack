@@ -1,0 +1,11 @@
+{
+  "name": "redash_to_slack",
+  "version": "1.0.0",
+  "main": "index.js",
+  "repository": "https://github.com/tatematsu-k/redash_to_slack.git",
+  "author": "tatematsu-k <ynu1264@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "serverless": "^1.69.0"
+  }
+}
