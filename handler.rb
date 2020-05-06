@@ -1,11 +1,16 @@
 require 'json'
+require 'slack-notifier'
+
+slack_webhook = ENV["SLACK_WEBHOOK_URL"]
+redash_api_key = ENV["REDASH_API_KEY"]
 
 def webhook(event:, context:)
+  body = JSON.parse(event["body"])
   {
     statusCode: 200,
     body: {
       message: 'Go Serverless v1.0! Your function executed successfully!',
-      input: event
+      input: body
     }.to_json
   }
 end
