@@ -7,6 +7,7 @@ redash_api_key = ENV["REDASH_API_KEY"]
 
 def webhook(event:, context:)
   body = JSON.parse(event["body"])
+  p body
   {
     statusCode: 200,
     body: {
