@@ -58,7 +58,7 @@ provider:
 #    - exclude-me-dir/**
 
 functions:
-  hello:
+  webhook:
     handler: handler.webhook
     events:
       - http:
