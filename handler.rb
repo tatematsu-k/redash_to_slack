@@ -27,10 +27,13 @@ def webhook(event:, context:)
 end
 
 def notify(text, attachments = [])
-  slack_client.post(
+  p "notify with: #{text}"
+  res = slack_client.post(
     text: text,
     attachments: attachments,
   )
+  p "notify response: #{res}"
+  res
 end
 
 def parse_slack_attachments(results = [], color: good)
